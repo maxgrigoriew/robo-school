@@ -1,0 +1,26 @@
+.benefits {
+  padding: 120px 0 100px;
+  background-color: #f9f9f9;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 40px;
+  }
+  &__item {
+    grid-column: 4 span;
+    &-title {
+      color: var(--dark-color);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 160%;
+      margin-bottom: 20px;
+    }
+    &-info {
+      color: var(--text-color);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+    }
+  }
+}

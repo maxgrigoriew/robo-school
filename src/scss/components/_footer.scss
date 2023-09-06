@@ -1,0 +1,20 @@
+.footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__copy {
+    order: 2;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    line-height: 160%;
+  }
+  &__phone {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,66 @@
+.contacts {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  position: relative;
+  &__fieldset {
+    border: none;
+  }
+  &__legend {
+    // opacity: 0;
+  }
+  &__bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  padding: 87px 0;
+  &__inner {
+    position: relative;
+    z-index: 1;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 64px;
+  }
+  &__info {
+    grid-column: 1 span;
+  }
+  &__form {
+    grid-column: 1 span;
+    display: flex;
+    flex-direction: column;
+    &-label {
+      background: var(--light-color);
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    &-input {
+      padding: 20px;
+      width: 100%;
+      border: none;
+      height: 64px;
+      border-radius: 5px;
+    }
+    &-btn {
+      height: 64px;
+      background-color: var(--dark-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__title {
+    color: var(--light-color);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+  }
+}

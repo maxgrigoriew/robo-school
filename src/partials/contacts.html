@@ -1,0 +1,47 @@
+<section class="contacts">
+  <div class="container">
+    <div class="contacts__inner">
+      <div class="contacts__info">
+        <h2 class="section-title contacts__title">
+          Запишитесь на курс со скидкой 10%
+        </h2>
+        <p class="contacts__text">Акция действительна до 10 марта 2022 года</p>
+      </div>
+      <fieldset class="contacts__fieldset">
+        <legend class="visually-hidden contacts__legend">Контакты</legend>
+        <div id="billing" class="visually-hidden">Введите контактный</div>
+        <form class="contacts__form">
+          <label class="contacts__form-label">
+            <input
+              id="contacts-name"
+              type="text"
+              class="contacts__form-input"
+              placeholder="Имя"
+              area-labelledby="billing"
+            />
+          </label>
+          <label class="contacts__form-label">
+            <input
+              id="contacts-tel"
+              type="text"
+              class="contacts__form-input"
+              placeholder="Телефон"
+              area-labelledby="billing contacts-tel"
+            />
+          </label>
+          <label class="contacts__form-label">
+            <input
+              id="contacts-email"
+              type="text"
+              class="contacts__form-input"
+              placeholder="E-mail"
+              area-labelledby="billing contacts-email"
+            />
+          </label>
+          <button class="btn contacts__form-btn">Оформить заявку</button>
+        </form>
+      </fieldset>
+    </div>
+  </div>
+  <img class="contacts__bg" src="../img/contacts-bg.svg" alt="" />
+</section>

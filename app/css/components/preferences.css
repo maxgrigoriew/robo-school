@@ -1,0 +1,104 @@
+.preferences {
+  padding-bottom: 120px;
+}
+.preferences__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 0 40px;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.preferences__list-item {
+  padding: 40px;
+  min-height: 460px;
+  border-radius: 20px;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  -ms-grid-column-span: 4;
+  grid-column: 4 span;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--dark-color);
+}
+.preferences__list-item--current {
+  min-height: 480px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+.preferences__list-item--current .preferences__list-title {
+  margin-bottom: 83px;
+}
+.preferences__list-item--current .preferences__list-title::before {
+  background-color: var(--light-color);
+}
+.preferences__list-item--current .preferences__list-title::after {
+  background-color: var(--light-color);
+}
+.preferences__list-item--current .preferences__list-price {
+  margin-bottom: 30px;
+}
+.preferences__list-item--current .preferences__list-text {
+  margin-bottom: 67px;
+}
+.preferences__list-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 63px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.preferences__list-title::before {
+  content: "";
+  margin-right: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 4px;
+  background-color: var(--dark-color);
+}
+.preferences__list-title::after {
+  content: "";
+  margin-left: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 4px;
+  background-color: var(--dark-color);
+}
+.preferences__list-price {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.preferences__list-text {
+  font-size: 18px;
+  margin-bottom: 60px;
+  line-height: 1.4;
+  text-align: center;
+}
+.preferences__list-btn {
+  margin-top: auto;
+  min-width: 100%;
+  padding: 23px 27px;
+}
+/*# sourceMappingURL=preferences.css.map */

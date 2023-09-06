@@ -31,6 +31,15 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
@@ -44,12 +53,6 @@ a {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-}
-
-.list-reset {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .input-reset {
@@ -83,6 +86,11 @@ a {
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
 }
+.container-fluid {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-fluid-width);
+}
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
@@ -104,4 +112,12 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.section-title {
+  color: var(--dark-color);
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 60px;
 }
